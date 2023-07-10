@@ -1,0 +1,10 @@
+---
+version: 2
+sql:
+  - engine: "sqlite"
+    schema: ../common/schema.sql
+    queries: ./queries/
+    gen:
+      go:
+        package: sqlc
+        out: .
