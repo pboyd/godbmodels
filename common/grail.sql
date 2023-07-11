@@ -1,3 +1,7 @@
+-- The actor and character names are from IMDB (https://www.imdb.com/title/tt0071853/fullcredits).
+-- Scene information is derived from the script at http://www.montypython.50webs.com/Holy_Grail_Scripts.htm.
+-- It is not complete, and probably has errors.
+
 INSERT INTO actors (id, name) VALUES
 (1, 'Graham Chapman'),
 (2, 'John Cleese'),
@@ -143,6 +147,10 @@ INSERT INTO scenes (id, name) VALUES
 (22, 'The Bridge Keeper Doesn''t Swallow'),
 (23, 'The French Fight Dirty or Why Everyone Hates the French');
 
+-- This maps scenes and characters. It was derived from the script, so I know
+-- it overlooks characters who didn't have lines in the scene. For example,
+-- Patsy is in almost every scene with Arthur, but he only has one line in the
+-- whole movie.
 INSERT INTO scene_characters (scene_id, character_id) VALUES
 (1, 1), (1, 5), (1, 20), (1, 32),
 (2, 12), (2, 51),
